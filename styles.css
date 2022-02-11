@@ -50,6 +50,7 @@ grid-column: 2/3;
 grid-row: 2/3;
 text-align: center;
 padding: 40px;
+height:
 }
 div.right{
 color: white;
@@ -76,4 +77,24 @@ margin: auto;
 width: 100px;
 height: 25px;
 background-color: #BF0404;
+}
+@media (max-width: 576px) {
+.main-container {
+min-height: fit-content;
+display: flex;
+flex-direction: column;
+}
+
+div.left{
+display: flex;
+flex-direction: column;
+}
+div.center{
+display: flex;
+flex-direction: column;
+}
+div.right{
+display: flex;
+flex-direction: column;
+}
 }
